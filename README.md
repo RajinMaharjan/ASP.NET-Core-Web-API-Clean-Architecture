@@ -45,10 +45,3 @@
         - While creating project don’t forget to add “\src” in location
         - In properties of Application, Domain and Infrastructure, change output type to Class Library
   }
-
-
-## Adding migration and updating database using console 
-### Adding Migration
-    dotnet ef migrations add "migration message" --project src/Infrastructure --startup-project src/Api -o Persistence/Migrations 
-### Updating database
-    dotnet ef database update  --project src/Infrastructure --startup-project src/Api 
